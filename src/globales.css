@@ -1,0 +1,104 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  height: 100vh;
+  background-color: #000;
+}
+
+.swiper-pagination-bullets {
+  left: 20px;
+}
+
+
+
+
+.login_inputs__container {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+}
+
+.login_inputs__container > label {
+  color: #200642;
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.login_inputs__container > input {
+  outline: none;
+  border: none;
+  height: 44px;
+  margin-bottom: 20px;
+}
+.login_inputs__container > a {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.swal2-confirm {
+  position: absolute;
+  padding: 15px;
+  width: 140px;
+  right: 25px;
+  bottom: 35px;
+  border-radius: 35px !important;
+  background-color: #9434D8 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.swal2-image {
+  margin: 20px auto 0 auto;
+}
+
+.swal2-popup {
+  border-radius: 22px;
+}
+
+
