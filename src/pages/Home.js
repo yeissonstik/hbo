@@ -3,9 +3,9 @@ import React, { useRef, useState } from "react";
 import HomeStyle  from '../styles/pages/HomeStyles/HomeStyle';
 import Logo from '../assets/logoHbo.png';
 import Navbar from "../components/Layout/Navbar/Navbar";
-import hboMax from '../assets/hboMax.png'
-import hboLogo from '../assets/hbo.png'
-import warnerMedia from '../assets/warnerMedia.png'
+import hboMax from '../assets/hboMax.png';
+import hboLogo from '../assets/hbo.png';
+import warnerMedia from '../assets/warnerMedia1.png'
 
 const Navbarlogos = [
     {

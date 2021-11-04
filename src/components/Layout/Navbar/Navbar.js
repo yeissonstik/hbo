@@ -56,15 +56,14 @@ function login() {
 
 
 
-export default function Navbar(props) {
+export default function Navbar({logos}) {
     const [active, setActive] = useState(false)
-    console.log(props.logos)
     return (
         <div className={NavbarStyle}>
             <div className='logos'>
               {
-                props.logos
-                ? props.logos.map((e)=> (
+                logos
+                ? logos.map((e)=> (
                   <img src={e.logo}/>
                 ))
                 : null
