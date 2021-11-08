@@ -4,6 +4,7 @@ import ImageProfile from "../assets/image-18.png";
 import Navbar from "../components/Layout/Navbar/Navbar";
 import hboMax from "../assets/hboMax.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Navbarlogos = [
   {
@@ -56,7 +57,7 @@ export default function Profile() {
           <div
             style={{ display: "flex", flexDirection: "row", color: "#FFFFFF" }}
           >
-            <span style={{ marginRight: 10, marginLeft: 20 }}>Editar Perfil</span>
+            <span style={{ marginRight: 10, marginLeft: 15 }}>Editar Perfil</span>
             <div
               style={{
                 display: "flex",
@@ -111,6 +112,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

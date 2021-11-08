@@ -7,9 +7,8 @@ const HomeStyle = style({
   height: "100vh",
   background: `url(${background})`,
   backgroundSize: "cover",
-  color: "white",
+  color:"white",
   $nest: {
-
   },
 });
 
