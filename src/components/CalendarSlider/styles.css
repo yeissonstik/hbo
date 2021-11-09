@@ -1,0 +1,23 @@
+.left-floating-el {
+  padding: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right-floating-el {
+  padding: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #9434D8;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

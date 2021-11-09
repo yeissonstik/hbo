@@ -10,7 +10,7 @@ import UserCalendar from "../components/UserCalendar";
 const Navbarlogos = [
   {
     logo: hboMax,
-  },
+  }
 ];
 const events = [
   {

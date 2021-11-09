@@ -32,50 +32,50 @@ const events = [
 export default function UserCalendar() {
   return (
     <div>
-              <h4
-            style={{
-              color: "#9434D8",
-              borderLeft: 2,
-              textAlign: "center",
-              fontWeight: 400,
-              fontSize: 20,
-            }}
-          >
-            Mi agenda
-          </h4>
-          <p style={{ color: "white", textAlign: "center", marginTop: -25 }}>
-            Encuentra todas las actividades que tenemos para ti.
-          </p>
-          <CalendarSlider />
-          <p style={{ fontWeight: 700, textAlign: "center" }}>
-            Lunes, 06 de Septiembre de 2021
-          </p>
-          <div style={{ columnCount: 2 }}>
-            {events.map((event) => {
-              return (
-                <div style={{ marginLeft: 10, padding: 6, display: "flex" }}>
-                  <div style={{ marginRight: 5, fontWeight: 700 }}>                    
-                    {event.startTime}
-                  </div>
-                  <div style={{ fontWeight: 300 }}>
-                    <span>{event.title}</span>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <span>{event.creator}</span>
-                      <Link style={{ textDecoration: "none" }} to="/">
-                        Invitar a ...
-                      </Link>
-                    </div>
-                  </div>
+      <h4
+        style={{
+          color: "#9434D8",
+          borderLeft: 2,
+          textAlign: "center",
+          fontWeight: 400,
+          fontSize: 20,
+        }}
+      >
+        Mi agenda
+      </h4>
+      <p style={{ color: "white", textAlign: "center", marginTop: -25 }}>
+        Encuentra todas las actividades que tenemos para ti.
+      </p>
+      <CalendarSlider />
+      <p style={{ fontWeight: 700, textAlign: "center", marginTop: 30 }}>
+        Lunes, 06 de Septiembre de 2021
+      </p>
+      <div style={{ columnCount: 2 }}>
+        {events.map((event) => {
+          return (
+            <div style={{ marginLeft: 10, padding: 6, display: "flex" }}>
+              <div style={{ marginRight: 5, fontWeight: 700 }}>
+                {event.startTime}
+              </div>
+              <div style={{ fontWeight: 300 }}>
+                <span>{event.title}</span>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span>{event.creator}</span>
+                  <Link style={{ textDecoration: "none" }} to="/">
+                    Invitar a ...
+                  </Link>
                 </div>
-              );
-            })}
-          </div>
-      
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
     </div>
   )
 }
