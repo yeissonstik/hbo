@@ -1,11 +1,11 @@
 
 import React, { useRef, useState } from "react";
 import HomeStyle  from '../styles/pages/HomeStyles/HomeStyle';
-import Logo from '../assets/logoHbo.png';
+import Logo from '../assets/images/HBO/hboLogo.png';
 import Navbar from "../components/Layout/Navbar/Navbar";
-import hboMax from '../assets/hboMax.png';
-import hboLogo from '../assets/hbo.png';
-import warnerMedia from '../assets/warnerMedia1.png'
+import hboMax from '../assets/images/HBOMAX/bannerLogoHboMax.png';
+import hboLogo from '../assets/images/HBO/hbo.png';
+import warnerMedia from '../assets/images/WARNERMEDIA/warner-image.png'
 
 const Navbarlogos = [
     {
@@ -22,7 +22,7 @@ const Navbarlogos = [
 export default function Home() {
   return (
     <div className={HomeStyle}>
-        <Navbar logos={Navbarlogos}></Navbar>
+        <Navbar logosList={Navbarlogos}></Navbar>
         <div className='title_container'>
             <div className='title'>
                 <div className='rows'>

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import ProfileStyle from "../styles/pages/ProfileStyles";
-import ImageProfile from "../assets/image-18.png";
+import ImageProfile from "../assets/images/image-18.png";
 import Navbar from "../components/Layout/Navbar/Navbar";
-import hboMax from "../assets/hboMax.png";
+import hboMax from "../assets/images/HBOMAX/logoHbo.png";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import UserCalendar from "../components/UserCalendar";

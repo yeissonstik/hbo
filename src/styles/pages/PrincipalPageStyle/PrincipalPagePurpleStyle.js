@@ -1,13 +1,13 @@
 import { style } from "typestyle";
 
-const PrincipalPagesBlueStyle = style({
+const PrincipalPagesPurpleStyle = style({
     background: 'red',
     $nest: {
         '& .swiper-pagination': {
             width: '50px'
         },
         '& .swiper-pagination-bullet': {
-            backgroundColor: '#161693',
+            backgroundColor: '#9434D8',
             opacity: 1
         },
         '& .swiper-pagination-bullet-active': {
@@ -16,4 +16,4 @@ const PrincipalPagesBlueStyle = style({
     }
 })
 
-export default PrincipalPagesBlueStyle;
+export default PrincipalPagesPurpleStyle;

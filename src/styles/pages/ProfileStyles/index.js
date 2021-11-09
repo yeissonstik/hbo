@@ -1,5 +1,5 @@
 import { style } from "typestyle";
-import background from "../../../assets/bg_plataforma-8-1.jpg";
+import background from "../../../assets/images/bg_plataforma-8-1.jpg";
 const HomeStyle = style({
   display: "flex",
   justifyContent: "center",

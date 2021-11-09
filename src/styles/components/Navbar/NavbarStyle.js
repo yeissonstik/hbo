@@ -21,7 +21,11 @@ const NavbarStyle = style({
             display: 'flex',
             $nest: {
                 '& .login_title': {
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    fontFamily: 'Montserrat',
+                    color: 'white',
+                    fontSize: '16px'
                 },
                 '& .login_closed-icon': {
                     cursor: 'pointer'
