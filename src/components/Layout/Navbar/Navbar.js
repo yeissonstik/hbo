@@ -5,6 +5,7 @@ import NavbarStyle from '../../../styles/components/Navbar/NavbarStyle'
 import loginImage from '../../../assets/hboMaxLogin.png'
 import menu from '../../../assets/icons/menu.svg'
 import Swal from "sweetalert2";
+import { Link } from 'react-router-dom';
 
 
 function login() {
@@ -78,7 +79,7 @@ export default function Navbar({logos}) {
                     ?
                 <div className='menu_container'>
                     <ul className='menu_list'>
-                        <li>Perfil</li>
+                        <li><Link style={{color:"white", textDecoration:"none"}} to="/profile">Perfil</Link></li>
                         <li>Proximos eventos</li>
                         <li>Capacitaciones</li>
                         <li>Aliados</li>
