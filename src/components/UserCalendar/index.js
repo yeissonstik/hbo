@@ -1,41 +1,79 @@
+import React from 'react'
+import { Link } from "react-router-dom";
 
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+const events = [
+  {
+    startTime: "08:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Mónica Allen",
+  },
+  {
+    startTime: "10:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Mónica Allen",
+  },
+  {
+    startTime: "03:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Harry Rojas",
+  },
+  {
+    startTime: "04:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Harry Rojas",
+  },
+];
 
-// Import Swiper styles
-import 'swiper/swiper-bundle.min.css'
-import "swiper/components/scrollbar/scrollbar.min.css"
-
-// import "./styles.css";
-
-
-// import Swiper core and required modules
-import SwiperCore, {
-  Scrollbar, Mousewheel
-} from 'swiper';
-
-// install Swiper modules
-SwiperCore.use([Scrollbar,Mousewheel]);
-
-
-export default function CarrouselVideos() {
-  
-  
-  
+export default function UserCalendar() {
   return (
-    <>
-    <Swiper direction={'horizontal'} slidesPerView={'auto'} freeMode={true} scrollbar={true} mousewheel={true} className="mySwiper">
-    <SwiperSlide>
-    <h4>Scroll Container</h4>
-    <p>2</p>
-    <p>12</p>
-    <p>27</p>
-    <p>12</p>
-    <p>2</p>
-    <p>10 </p>
-    </SwiperSlide>
-  </Swiper>
-    </>
+    <div>
+              <h4
+            style={{
+              color: "#9434D8",
+              borderLeft: 2,
+              textAlign: "center",
+              fontWeight: 400,
+              fontSize: 20,
+            }}
+          >
+            Mi agenda
+          </h4>
+          <p style={{ color: "white", textAlign: "center", marginTop: -25 }}>
+            Encuentra todas las actividades que tenemos para ti.
+          </p>
+          <p style={{ fontWeight: 700, textAlign: "center" }}>
+            Lunes, 06 de Septiembre de 2021
+          </p>
+          <div style={{ columnCount: 2 }}>
+            {events.map((event) => {
+              return (
+                <div style={{ marginLeft: 10, padding: 6, display: "flex" }}>
+                  <div style={{ marginRight: 5, fontWeight: 700 }}>                    
+                    {event.startTime}
+                  </div>
+                  <div style={{ fontWeight: 300 }}>
+                    <span>{event.title}</span>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span>{event.creator}</span>
+                      <Link style={{ textDecoration: "none" }} to="/">
+                        Invitar a ...
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+      
+    </div>
   )
 }
