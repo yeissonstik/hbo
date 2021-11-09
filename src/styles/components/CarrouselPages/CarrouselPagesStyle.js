@@ -14,9 +14,11 @@ export const CarrouselPageStyle = style({
             justifyContent: 'start',
             $nest: {
                 '& .banner_title': {
-                    fontSize: '32px',
+                    margin: '15px 0',
+                    fontSize: '28px',
                     textAlign: 'start',
                     fontFamily: 'Montserrat',
+                    fontWeight: 300,
                     color: 'white',
                 },
                 '& .banner_title__button': {

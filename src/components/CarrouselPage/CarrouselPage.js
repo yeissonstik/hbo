@@ -17,9 +17,9 @@ function CarrouselPage({currentPage, content, buttonColor, setPage}) {
                     : 
                     <img src={content.bannerLogo}/>
                 }
-                <h3 className='banner_title'>
+                <h5 className='banner_title'>
                     {content.title}
-                </h3>
+                </h5>
                     <Link className='banner_title__button' to='/' style={{backgroundColor: buttonColor}}>Ver capacitaciones</Link>
             </div>
         </div>

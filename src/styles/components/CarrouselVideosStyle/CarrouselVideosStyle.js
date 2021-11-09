@@ -8,14 +8,13 @@ const CarrouselVideosStyle = style({
     width: '275px',
     height: '52vh',
     overflow: 'scroll',
-    background: 'rgba(0, 0, 0, 0.9)',
+    background: 'rgba(0, 0, 0, 0.7)',
     zIndex: 2,
     $nest: {
         '&::-webkit-scrollbar': {
             width: '5px',     /* Tamaño del scroll en vertical */
             height: '100%',    /* Tamaño del scroll en horizontal */
             color: 'red',
-            // backgroundColor: 'red',
             borderRight: 'solid 1px white'
         },
         '&::-webkit-scrollbar-thumb': {

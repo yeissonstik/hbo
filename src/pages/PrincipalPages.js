@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import "../globales.css";
 import bgImage1 from '../assets/images/harryPotter_background.png'
@@ -35,6 +36,32 @@ import CarrouselVideos from "../components/CarrouselVideos/CarrouselVideos";
 // install Swiper modules
 SwiperCore.use([Pagination]);
 
+const videosHboMax = [
+  {
+    'name': 'video 1',
+    'url': 'https://youtu.be/HguSMW8XveQ',
+    'banner': 'http://img.youtube.com/vi/HguSMW8XveQ/0.jpg',
+    'id': 'HguSMW8XveQ'
+  },
+  {
+    'name': 'video 1',
+    'url': 'https://youtu.be/HguSMW8XveQ',
+    'banner': 'http://img.youtube.com/vi/HguSMW8XveQ/0.jpg',
+    'id': 'HguSMW8XveQ'
+  },
+  {
+    'name': 'video 1',
+    'url': 'https://youtu.be/HguSMW8XveQ',
+    'banner': 'http://img.youtube.com/vi/HguSMW8XveQ/0.jpg',
+    'id': 'HguSMW8XveQ'
+  },
+  {
+    'name': 'video 1',
+    'url': 'https://youtu.be/HguSMW8XveQ',
+    'banner': 'http://img.youtube.com/vi/HguSMW8XveQ/0.jpg',
+    'id': 'HguSMW8XveQ'
+  },
+]
 
 const principalPages = [
   {
@@ -67,7 +94,8 @@ const principalPages = [
         title: 'hbo banner 4',
         test: ''
       },
-    ]
+    ],
+    videos: videosHboMax
   },
   {
     pages: 'hbo',
@@ -140,6 +168,11 @@ export default function Capacitaciones() {
   
   return (
     <>
+        {/* <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}> */}
+
           {
             principalPages.map((p) => {
               if (page === p.pages) {
@@ -148,6 +181,7 @@ export default function Capacitaciones() {
                     <>
                     <Navbar uniqueLogo={p.navbarImage}></Navbar>
                     <Swiper direction={'vertical'} mousewheel={true} pagination={{ "clickable": true }} className={`${PrincipalPagesBlueStyle} mySwiper`}>
+                        
                         {
                           p.content.map(e => (
                             <>
@@ -159,7 +193,7 @@ export default function Capacitaciones() {
                         }
                     </Swiper>
                       <LinkButtons currentPage={page} buttonColor={p.buttonColor} setPage={setpage}></LinkButtons>
-                    <CarrouselVideos></CarrouselVideos>
+                    <CarrouselVideos currentPage={page}></CarrouselVideos>
                     </>
                  )
                 }
@@ -179,7 +213,7 @@ export default function Capacitaciones() {
                         }
                     </Swiper>
                     <LinkButtons currentPage={page} buttonColor={p.buttonColor} setPage={setpage}></LinkButtons>
-                    <CarrouselVideos></CarrouselVideos>
+                    <CarrouselVideos currentPage={page}></CarrouselVideos>
                     </>
                  )
                 }
@@ -200,7 +234,7 @@ export default function Capacitaciones() {
                       </Swiper>
                       
                       <LinkButtons currentPage={page} buttonColor={p.buttonColor} setPage={setpage}></LinkButtons>
-                      <CarrouselVideos></CarrouselVideos>
+                      <CarrouselVideos currentPage={page}></CarrouselVideos>
                     </>
                  )
                 }
@@ -209,6 +243,7 @@ export default function Capacitaciones() {
             }
             )
           }
+        {/* </ReactCSSTransitionGroup> */}
     </>
   )
 }

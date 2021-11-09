@@ -7,7 +7,7 @@ function VideoContainer({video}) {
 
     return (
         <>
-        <div onClick={() => setOpen(true)} style={{backgroundImage: `url(${video.image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat"}} className='image_video'>
+        <div onClick={() => setOpen(true)} style={{backgroundImage: `url(${video.banner})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", cursor: 'pointer'}} className='image_video'>
         </div>
         {
             isOpen

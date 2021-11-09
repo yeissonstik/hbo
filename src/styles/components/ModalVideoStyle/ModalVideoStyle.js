@@ -18,12 +18,13 @@ const ModalVideoStyle = style({
             color: 'white'
         },
         '& iframe': {
-            zIndex: 1000
+            zIndex: 1000,
         },
         '& .close_modal': {
             position: "absolute",
             top: '120px',
-            right: '300px'
+            right: '300px',
+            cursor: 'pointer'
             // marginLeft: '80%'
         },
     }

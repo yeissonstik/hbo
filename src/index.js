@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
-import Capacitaciones from './pages/PrincipalPages'
-
+import Capacitaciones from './pages/PrincipalPages';
+import Profile from './pages/Profile';
 
 import "swiper/bundle";
 import "./globales.css";
@@ -16,6 +16,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/Capacitaciones' component={Capacitaciones}/>
+        <Route path='/profile' component={Profile}/>
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
