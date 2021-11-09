@@ -44,15 +44,15 @@ const dates = [
   },
   {
     month: "Sept",
-    day: 12
+    day: 13
   },
   {
     month: "Sept",
-    day: 12
+    day: 14
   },
   {
     month: "Sept",
-    day: 12
+    day: 15
   }
 ];
 
@@ -66,7 +66,7 @@ export default function CalendarSlider() {
     swiperRef.current?.swiper.slideNext();
   }, [swiperRef]);
   return (
-    <div style={{display:"flex", justifyContent:'center', alignItems:'center'}}>
+    <div style={{ display: "flex", alignItems: 'center' }}>
       <div className="left-floating-el" onClick={prevSlide}>
         <img src={ArrowLeft} alt="prev" />
       </div>
@@ -74,13 +74,13 @@ export default function CalendarSlider() {
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         ref={swiperRef}
-        // spaceBetween={-80}
-        slidesPerView={6}
+        spaceBetween={-100}
+        slidesPerView={7}
         onSlideChange={() => console.log('slide change')}
-        style={{ maxWidth: "50vw"}}
+        style={{ maxWidth: "50vw", border:"none"}}
       >
         {dates.map((date) => (
-          <SwiperSlide style={{ backgroundColor: "transparent"}}>
+          <SwiperSlide style={{ backgroundColor: "transparent" }}>
             <button style={{ cursor: "pointer", backgroundColor: date.day === 6 ? '#9434D8' : 'white', color: date.day === 6 ? 'white' : '#8D8D8D', fontWeight: 700, height: 64, width: 58, borderRadius: 20, border: "none" }}>
               {date.month} <br /> {date.day}
             </button>
