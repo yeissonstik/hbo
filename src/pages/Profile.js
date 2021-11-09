@@ -4,7 +4,7 @@ import ImageProfile from "../assets/images/image-18.png";
 import Navbar from "../components/Layout/Navbar/Navbar";
 import hboMax from "../assets/images/HBOMAX/logoHbo.png";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/Layout/Navbar/Footer";
 import UserCalendar from "../components/UserCalendar";
 
 const Navbarlogos = [

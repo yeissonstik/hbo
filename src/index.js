@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import Capacitaciones from './pages/PrincipalPages';
 import Profile from './pages/Profile';
+import UpcomingEvents from './pages/UpcomingEvents'
 
 import "swiper/bundle";
 import "./globales.css";
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route exact path='/' component={Home}/>
         <Route path='/Capacitaciones' component={Capacitaciones}/>
         <Route path='/profile' component={Profile}/>
+        <Route path='/events' component={UpcomingEvents}/>
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

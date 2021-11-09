@@ -2,8 +2,6 @@ import React from 'react'
 import { SwiperSlide } from 'swiper/react'
 import { CarrouselPageStyle } from '../../styles/components/CarrouselPages/CarrouselPagesStyle';
 import { Link } from 'react-router-dom';
-import TrainingCarousel from '../ TrainingCarousel/TrainingCarousel';
-import LinkButtons from '../LinkButtons/LinkButtons';
 
 function CarrouselPage({currentPage, content, buttonColor, setPage}) {
     return (
