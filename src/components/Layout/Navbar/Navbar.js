@@ -104,7 +104,7 @@ export default function Navbar({logosList, uniqueLogo}) {
                     ?
                 <div onMouseLeave={() => setActive(!active)} className='menu_container'>
                     <ul className='menu_list'>
-                        <li>Perfil</li>
+                        <li><Link style={{color:"white", textDecoration:"none"}} to="/profile">Perfil</Link></li>
                         <li>Proximos eventos</li>
                         <li>Capacitaciones</li>
                         <li>Aliados</li>
