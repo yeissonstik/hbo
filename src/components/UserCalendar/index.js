@@ -1,19 +1,79 @@
-import React from 'react';
+import React from 'react'
+import { Link } from "react-router-dom";
 
-import { ScheduleComponent, Day, Week, Inject, ViewsDirective, ViewDirective } from '@syncfusion/ej2-react-schedule';
-import { extend } from '@syncfusion/ej2-base';
-export default class UserCalendar extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.data = extend([], [], null, true);
-    }
-    render() {
-        return <ScheduleComponent renderCell={()=><div>hola</div>} timeScale={{ enable: false }} width='100%' height='350px' selectedDate={new Date(2018, 1, 15)}>
-  <ViewsDirective>
-    <ViewDirective option='Week' interval={1} displayName='1 Weeks' showWeekend={true} isSelected={true}/>
-  </ViewsDirective>
-  <Inject services={[Week]}/>
-</ScheduleComponent>;
-    }
+const events = [
+  {
+    startTime: "08:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Mónica Allen",
+  },
+  {
+    startTime: "10:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Mónica Allen",
+  },
+  {
+    startTime: "03:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Harry Rojas",
+  },
+  {
+    startTime: "04:00 AM",
+    endTime: "2021-11-09T15:18:35.475Z",
+    title: "Nombre de la conferencia y/o charla",
+    creator: "Harry Rojas",
+  },
+];
+
+export default function UserCalendar() {
+  return (
+    <div>
+              <h4
+            style={{
+              color: "#9434D8",
+              borderLeft: 2,
+              textAlign: "center",
+              fontWeight: 400,
+              fontSize: 20,
+            }}
+          >
+            Mi agenda
+          </h4>
+          <p style={{ color: "white", textAlign: "center", marginTop: -25 }}>
+            Encuentra todas las actividades que tenemos para ti.
+          </p>
+          <p style={{ fontWeight: 700, textAlign: "center" }}>
+            Lunes, 06 de Septiembre de 2021
+          </p>
+          <div style={{ columnCount: 2 }}>
+            {events.map((event) => {
+              return (
+                <div style={{ marginLeft: 10, padding: 6, display: "flex" }}>
+                  <div style={{ marginRight: 5, fontWeight: 700 }}>                    
+                    {event.startTime}
+                  </div>
+                  <div style={{ fontWeight: 300 }}>
+                    <span>{event.title}</span>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <span>{event.creator}</span>
+                      <Link style={{ textDecoration: "none" }} to="/">
+                        Invitar a ...
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+      
+    </div>
+  )
 }
-;
