@@ -6,30 +6,28 @@ export const CarrouselPageStyle = style({
     $nest: {
         '& .banner_title__container': {
             position: "absolute",
-            top: '35%',
+            bottom: '30%',
             left: '70px',
             maxWidth: '500px',
+            display: 'flex',
+            flexDirection: "column",
+            justifyContent: 'start',
             $nest: {
                 '& .banner_title': {
-                    display: 'flex',
-                    flexDirection: "column",
-                    fontSize: '34px',
+                    fontSize: '32px',
                     textAlign: 'start',
+                    fontFamily: 'Montserrat',
                     color: 'white',
-                    $nest: {
-                        '& .banner_title__button': {
-                            maxWidth: '210px',
-                            fontSize: '21px',
-                            fontWeight: 300,
-                            marginTop: '50px',
-                            padding: '15px',
-                            // backgroundColor: '#9434D8',
-                            textDecoration: 'none',
-                            borderRadius: '35px',
-                            textAlign: "center",
-                            color: 'white',
-                        }
-                    }
+                },
+                '& .banner_title__button': {
+                    maxWidth: '210px',
+                    fontSize: '21px',
+                    fontWeight: 300,
+                    padding: '15px',
+                    textDecoration: 'none',
+                    borderRadius: '35px',
+                    textAlign: "center",
+                    color: 'white',
                 }
             }
         }

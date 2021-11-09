@@ -5,19 +5,26 @@ import { Link } from 'react-router-dom';
 import TrainingCarousel from '../ TrainingCarousel/TrainingCarousel';
 import LinkButtons from '../LinkButtons/LinkButtons';
 
-function CarrouselPage(props) {
+function CarrouselPage({currentPage, content, buttonColor, setPage}) {
     return (
         <>
-        <div style={{backgroundImage: `url(${props.content.banner})`, backgroundSize: 'cover'}} className={CarrouselPageStyle}>
+        <div style={{backgroundImage: `url(${content.banner})`, backgroundSize: 'cover'}} className={CarrouselPageStyle}>
             <div className='banner_title__container'>
+                {
+                    currentPage === 'hbo'
+                    ?
+                    <img style={{maxWidth:'300px'}} src={content.bannerLogo}/>
+                    : 
+                    <img src={content.bannerLogo}/>
+                }
                 <h3 className='banner_title'>
-                    {props.content.title}
-                    <Link className='banner_title__button' to='/' style={{backgroundColor: props.buttonColor}}>Ver capacitaciones</Link>
+                    {content.title}
                 </h3>
+                    <Link className='banner_title__button' to='/' style={{backgroundColor: buttonColor}}>Ver capacitaciones</Link>
             </div>
         </div>
         {/* <TrainingCarousel></TrainingCarousel> */}
-        <LinkButtons setPage={props.setPage}></LinkButtons>
+        {/* <LinkButtons currentPage={currentPage} buttonColor={buttonColor} setPage={setPage}></LinkButtons> */}
         </>
     )
 }

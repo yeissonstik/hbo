@@ -67,7 +67,7 @@ body {
   color: #200642;
   font-size: 15px;
   margin: 5px 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat';
 
 }
 .login_inputs__container > input {
@@ -82,11 +82,10 @@ body {
 }
 
 .swal2-confirm {
-  position: absolute;
+  /* position: absolute; */
   padding: 15px;
+  margin-left: 220px;
   width: 140px;
-  right: 25px;
-  bottom: 35px;
   border-radius: 35px !important;
   background-color: #9434D8 !important;
   outline: none !important;
@@ -99,6 +98,11 @@ body {
 
 .swal2-popup {
   border-radius: 22px;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.ttf')
 }
 
 

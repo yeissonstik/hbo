@@ -1,5 +1,5 @@
 import { style } from "typestyle";
-import background from '../../../assets/home-background.png'
+import background from '../../../assets/images/home-background.png'
 const HomeStyle = style({
     display: 'flex',
     justifyContent: 'center',
@@ -15,11 +15,13 @@ const HomeStyle = style({
             $nest: {
                 '& h1': {
                     color: 'white',
-                    margin: '0 20px'
+                    margin: '0 20px',
+                    fontFamily: 'Montserrat'
                 },
                 '& .title': {
                     display: 'flex',
                     alignItems: 'center',
+                    fontFamily: 'Montserrat'
                 },
                 '& .rows': {
                     width: '40%'
