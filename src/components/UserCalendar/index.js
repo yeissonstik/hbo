@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import CalendarSlider from '../CalendarSlider';
 
 const events = [
   {
@@ -45,6 +46,7 @@ export default function UserCalendar() {
           <p style={{ color: "white", textAlign: "center", marginTop: -25 }}>
             Encuentra todas las actividades que tenemos para ti.
           </p>
+          <CalendarSlider />
           <p style={{ fontWeight: 700, textAlign: "center" }}>
             Lunes, 06 de Septiembre de 2021
           </p>
