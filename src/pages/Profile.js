@@ -10,7 +10,7 @@ import UserCalendar from "../components/UserCalendar";
 const Navbarlogos = [
   {
     logo: hboMax,
-  },
+  }
 ];
 const events = [
   {
@@ -53,7 +53,7 @@ export default function Profile() {
     <div className={ProfileStyle}>
       <Navbar logos={Navbarlogos}></Navbar>
       <div
-        style={{ display: "flex", marginTop: 150 }}
+        style={{ display: "flex", marginTop: 100 }}
         className="info-container"
       >
         <div style={{ marginRight: 100 }}>
