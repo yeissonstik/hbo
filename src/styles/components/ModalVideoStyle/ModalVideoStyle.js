@@ -21,11 +21,12 @@ const ModalVideoStyle = style({
             zIndex: 1000,
         },
         '& .close_modal': {
-            position: "absolute",
-            top: '120px',
-            right: '300px',
-            cursor: 'pointer'
-            // marginLeft: '80%'
+            // position: "absolute",
+            cursor: 'pointer',
+            marginLeft: '800px',
+            marginBottom: '40px'
+            // top: '120px',
+            // right: '300px',
         },
     }
 })
