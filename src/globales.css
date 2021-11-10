@@ -22,8 +22,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -82,7 +80,6 @@ body {
 }
 
 .swal2-confirm {
-  /* position: absolute; */
   padding: 15px;
   margin-left: 220px;
   width: 140px;
@@ -111,7 +108,6 @@ body {
 }
 
 .row::after {
-  /* display: block;*/
   clear: both;
   content: "";
 }

@@ -19,16 +19,21 @@ const UpcomingEventsStyle = style({
         '& .container': {
             display: 'flex',
             paddingBottom: '150px',
-        },
-        '& .banner': {
-            margin: '0 80px',
             $nest: {
-                '& .banner_title': {
-                    fontFamily: 'Montserrat',
-                    fontSize: '60px',
-                    fontWeight: 400,
-                    marginBottom: '30px'
-                }
+                '& .calendar': {
+                    paddinTop: '400px',
+                },
+                '& .banner': {
+                    margin: '0 80px',
+                    $nest: {
+                        '& .banner_title': {
+                            fontFamily: 'Montserrat',
+                            fontSize: '60px',
+                            fontWeight: 400,
+                            marginBottom: '30px'
+                        }
+                    }
+                },
             }
         },
     }
