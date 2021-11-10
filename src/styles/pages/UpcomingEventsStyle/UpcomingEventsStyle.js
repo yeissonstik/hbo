@@ -22,9 +22,12 @@ const UpcomingEventsStyle = style({
             $nest: {
                 '& .calendar': {
                     paddinTop: '400px',
+                    width: '45%'
                 },
                 '& .banner': {
-                    margin: '0 80px',
+                    margin: '0',
+                    marginLeft: '20px',
+                    width: '55%',
                     $nest: {
                         '& .banner_title': {
                             fontFamily: 'Montserrat',
